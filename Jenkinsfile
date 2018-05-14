@@ -25,10 +25,12 @@ jdk 'jdk8'
             }         
         }
     }
-    post {
-            always {
-                echo "post"
-                    junit 'target/surefire-reports/*.xml'
-            }
+post {
+        always {
+            junit '**/target/*.xml'
         }
+        failure {
+            echo "post nope"
+        }
+    }
 }
