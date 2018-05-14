@@ -27,7 +27,7 @@ jdk 'jdk8'
     }
 post {
         always {
-            junit '/target/*.xml'
+            junit '\target\surefire-reports\*.xml'
         }
         failure {
             echo "post nope"
