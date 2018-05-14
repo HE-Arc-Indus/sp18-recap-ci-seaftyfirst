@@ -6,10 +6,10 @@ import java.util.List;
 import org.junit.Test;
 
 public class FizzBuzzTest {
-  
+
   @Test
   public void testListSize() {
-    // Arrange
+
     FizzBuzz fb = new FizzBuzz();
     List<String> expected = Arrays.asList(null, null, null);
     // Act
@@ -21,7 +21,7 @@ public class FizzBuzzTest {
 
   @org.junit.Test
   public void testWithTwoIntegers() {
-    // Arrange
+
     FizzBuzz fb = new FizzBuzz();
     List<String> expected = Arrays.asList("1", "2");
     // Act
@@ -33,7 +33,7 @@ public class FizzBuzzTest {
 
   @org.junit.Test
   public void testReplace3byFizz() {
-    // Arrange
+
     FizzBuzz fb = new FizzBuzz();
     List<String> expected = Arrays.asList("1", "2", "Fizz");
     // Act
