@@ -27,6 +27,7 @@ jdk 'jdk8'
     }
     post {
             always {
+                echo "post"
                     junit 'target/surefire-reports/*.xml'
             }
         }
